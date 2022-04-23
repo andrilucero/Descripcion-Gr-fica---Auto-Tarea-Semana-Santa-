@@ -1,0 +1,40 @@
+﻿<Window x:Class="Carro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Carro"
+        mc:Ignorable="d"
+        Title="Automóvil" Height="450" Width="800" Background="Black" Icon="/ExecutiveCar_Black_icon-icons.com_54904.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="199*"/>
+            <ColumnDefinition Width="601*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock FontSize="22" Text="Carro - Descripcion Grafica" HorizontalAlignment="Left" FontFamily="Agency FB" Foreground="#FFEAEAEA" Grid.Column="1" Margin="105,0,0,0"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="56,136,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1"/>
+        <Image Margin="181,109,159,-20" Source="/Image1.png" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Button Content="Puertas" Click ="BT_Puerta" HorizontalAlignment="Left" Margin="60,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.215,3.388" Width="82" Height="33" FontFamily="Agency FB" FontSize="16" Background="#FF00FFB3"/>
+        <Button x:Name="luces" Content="Luces" Click ="BT_Luces" HorizontalAlignment="Left" Margin="180,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.215,3.388" Width="82" Height="33" Background="#FF00FFB3" FontFamily="Agency FB" FontSize="16" Grid.ColumnSpan="2"/>
+        <Button Content="Motor" Click ="BT_Motor" HorizontalAlignment="Left" Margin="101,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.215,3.388" Width="82" Height="33" FontFamily="Agency FB" FontSize="16" Background="#FF00FFB3" Grid.Column="1" />
+        <Button Content="Radio" Click ="BT_ClickRadio" HorizontalAlignment="Left" Margin="221,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.215,3.388" Width="82" Height="33" FontFamily="Agency FB" FontSize="16" Background="#FF00FFB3" Grid.Column="1"/>
+        <Button Content="Freno" Click ="BT_Freno" HorizontalAlignment="Left" Margin="341,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.215,3.388" Width="82" Height="33" FontFamily="Agency FB" FontSize="16" Background="#FF00FFB3" Grid.Column="1"/>
+        <Button Content="Claxon" Click ="BT_Claxon" HorizontalAlignment="Left" Margin="461,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.215,3.388" Width="82" Height="33" FontFamily="Agency FB" FontSize="16" Background="#FF00FFB3" Grid.Column="1"/>
+        <Button Content="Stop" Click ="BT_Stop" HorizontalAlignment="Left" Height="27" Margin="236,62,0,0" VerticalAlignment="Top" Width="50" Background="#FFD05959" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="93,152,0,0" VerticalAlignment="Top" Width="100">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/giphy.gif" Stretch="None"/>
+            </Image.OpacityMask>
+        </Image>
+        <Button Content="Apagar" Click ="BT_Apagarluces" HorizontalAlignment="Left" Height="24" Margin="196,63,0,0" VerticalAlignment="Top" Width="54" Background="#FFD05959" Grid.ColumnSpan="2"/>
+
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>
